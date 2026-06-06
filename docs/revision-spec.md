@@ -33,143 +33,26 @@ Revise the Bengali AI book implementing 10 beta reader recommendations. All edit
 - Punchy and direct, not preachy or textbook-ish
 - Concrete examples over abstract categories
 
-## Editing Workflow (for each existing chapter)
+## Editing Workflow
 
-```bash
-# 1. Unpack
-python .agents/skills/docx/scripts/office/unpack.py "chapters/NN_name.docx" /tmp/ch_NN/
+**Format: Markdown** (switched from docx XML for speed and reliability)
 
-# 2. Edit /tmp/ch_NN/word/document.xml
-#    - Insertions: <w:ins w:id="N" w:author="Claude" w:date="2026-06-07T00:00:00Z">
-#    - Deletions: <w:del w:id="N" w:author="Claude" w:date="2026-06-07T00:00:00Z">
-#    - ALL text changes must be tracked changes, or pack.py validation fails
+- Working files: `chapters-md/NN_name.md`
+- Edit markdown directly, git diff serves as change tracking
+- Final conversion back to .docx happens after all content is approved
+- Original .docx files preserved in `chapters/` as reference
 
-# 3. Repack
-python .agents/skills/docx/scripts/office/pack.py /tmp/ch_NN/ "chapters/NN_name.docx" --original "chapters/NN_name.docx"
+## Markdown Conventions
 
-# 4. Cleanup
-rm -rf /tmp/ch_NN/
-```
-
-## XML Patterns
-
-### Body text insertion
-```xml
-<w:p w14:paraId="UNIQUE_HEX_BELOW_80000000">
-  <w:pPr>
-    <w:spacing w:after="180" w:before="0" w:line="360" w:lineRule="auto"/>
-    <w:ind w:firstLine="360"/>
-    <w:jc w:val="both"/>
-  </w:pPr>
-  <w:ins w:id="UNIQUE_INT" w:author="Claude" w:date="2026-06-07T00:00:00Z">
-    <w:r>
-      <w:rPr>
-        <w:rFonts w:ascii="Noto Serif Bengali" w:hAnsi="Noto Serif Bengali" w:eastAsia="Noto Serif Bengali" w:cs="Noto Serif Bengali"/>
-        <w:sz w:val="24"/>
-        <w:szCs w:val="24"/>
-      </w:rPr>
-      <w:t>Bengali text here</w:t>
-    </w:r>
-  </w:ins>
-</w:p>
-```
-
-### "একটু ভাবো" callout box (header + body)
-```xml
-<!-- Header -->
-<w:p w14:paraId="UNIQUE_HEX">
-  <w:pPr>
-    <w:pBdr>
-      <w:top w:val="single" w:color="2E74B5" w:sz="4" w:space="3"/>
-      <w:left w:val="single" w:color="2E74B5" w:sz="12" w:space="8"/>
-    </w:pBdr>
-    <w:spacing w:after="60" w:before="120" w:line="360" w:lineRule="auto"/>
-    <w:ind w:firstLine="360" w:left="360"/>
-    <w:jc w:val="both"/>
-  </w:pPr>
-  <w:ins w:id="N" w:author="Claude" w:date="2026-06-07T00:00:00Z">
-    <w:r>
-      <w:rPr>
-        <w:rFonts w:ascii="Noto Serif Bengali" w:hAnsi="Noto Serif Bengali" w:eastAsia="Noto Serif Bengali" w:cs="Noto Serif Bengali"/>
-        <w:b/><w:bCs/>
-        <w:color w:val="2E74B5"/>
-        <w:sz w:val="24"/><w:szCs w:val="24"/>
-      </w:rPr>
-      <w:t>একটু ভাবো</w:t>
-    </w:r>
-  </w:ins>
-</w:p>
-<!-- Body -->
-<w:p w14:paraId="UNIQUE_HEX">
-  <w:pPr>
-    <w:pBdr>
-      <w:left w:val="single" w:color="2E74B5" w:sz="12" w:space="8"/>
-    </w:pBdr>
-    <w:spacing w:after="120" w:before="0" w:line="360" w:lineRule="auto"/>
-    <w:ind w:firstLine="360" w:left="360"/>
-    <w:jc w:val="both"/>
-  </w:pPr>
-  <w:ins w:id="N" w:author="Claude" w:date="2026-06-07T00:00:00Z">
-    <w:r>
-      <w:rPr>
-        <w:rFonts w:ascii="Noto Serif Bengali" w:hAnsi="Noto Serif Bengali" w:eastAsia="Noto Serif Bengali" w:cs="Noto Serif Bengali"/>
-        <w:i/><w:iCs/>
-        <w:color w:val="333333"/>
-        <w:sz w:val="24"/><w:szCs w:val="24"/>
-      </w:rPr>
-      <w:t>Question text here</w:t>
-    </w:r>
-  </w:ins>
-</w:p>
-```
-
-### Heading2 insertion
-```xml
-<w:p w14:paraId="UNIQUE_HEX">
-  <w:pPr>
-    <w:pStyle w:val="Heading2"/>
-    <w:spacing w:after="140" w:before="400" w:line="360" w:lineRule="auto"/>
-    <w:ind w:firstLine="0"/>
-    <w:jc w:val="left"/>
-  </w:pPr>
-  <w:ins w:id="N" w:author="Claude" w:date="2026-06-07T00:00:00Z">
-    <w:r>
-      <w:rPr>
-        <w:rFonts w:ascii="Noto Serif Bengali" w:hAnsi="Noto Serif Bengali" w:eastAsia="Noto Serif Bengali" w:cs="Noto Serif Bengali"/>
-        <w:b/><w:bCs/>
-        <w:color w:val="2E4057"/>
-        <w:sz w:val="32"/><w:szCs w:val="32"/>
-      </w:rPr>
-      <w:t>Section title</w:t>
-    </w:r>
-  </w:ins>
-</w:p>
-```
-
-### Tracked change deletion (mid-paragraph)
-```xml
-<w:r><w:rPr>SAME_RPR</w:rPr><w:t>text before</w:t></w:r>
-<w:del w:id="N" w:author="Claude" w:date="2026-06-07T00:00:00Z">
-  <w:r><w:rPr>SAME_RPR</w:rPr><w:delText>deleted text</w:delText></w:r>
-</w:del>
-<w:ins w:id="N+1" w:author="Claude" w:date="2026-06-07T00:00:00Z">
-  <w:r><w:rPr>SAME_RPR</w:rPr><w:t>replacement text</w:t></w:r>
-</w:ins>
-<w:r><w:rPr>SAME_RPR</w:rPr><w:t>text after</w:t></w:r>
-```
-
-## Critical Rules
-
-- **paraId must be < 0x80000000** — use 10000001, 10000002, etc. (NOT A0000001)
-- **Every text change must be a tracked change** — raw edits fail pack.py validation
-- **Each w:ins/w:del needs a unique w:id** — use ranges per chapter (Ch2: 200+, Ch3: 300+, etc.)
-- **Preserve existing rPr** when splitting runs for tracked changes
-- **Smart quotes**: use `&#x201C;` `&#x201D;` `&#x2018;` `&#x2019;` for quotes/apostrophes
-- **Em dash**: use `&#x2014;` or the actual — character
+- `# Heading` = Chapter title (Heading1)
+- `## Heading` = Section heading (Heading2)
+- `**একটু ভাবো**` + `*italic question*` = Interactive callout
+- `[Insert diagram: description]` = Diagram placeholder (English)
+- Body text = plain paragraphs
 
 ## New chapters (12, 13)
 
-Created with python-docx (not XML editing). Copy styles from existing chapter as template. No tracked changes needed for new content.
+Created directly as markdown in `chapters-md/`. Converted to .docx in the final pass.
 
 ---
 
