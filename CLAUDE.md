@@ -37,6 +37,14 @@ Chapter files are numbered `00_title.docx` through `11_*.docx`. The split script
 pip install python-docx
 ```
 
+## Writing
+
+- **Read `docs/style-guide.md` before writing or editing any chapter.** It defines the voice, terms and numerals.
+- Revision work happens in `chapters-md/` (see `docs/revision-spec.md`).
+- `tools/check.sh <file>` runs Vale (`styles/Bangla/`) + Hunspell bn_BD; a hook runs it after every edit to `chapters-md/`. Add accepted words to `tools/wordlist.txt`.
+- Editor agents in `.claude/agents/`: `beta-reader`, `line-editor`, `fact-checker` (all report-only).
+- Setup on a new machine: `brew install vale hunspell`; put `bn_BD.aff`/`bn_BD.dic` (GPL-2, from the "bn-BD spellchecker" Firefox add-on by Bangla Type Foundry) in `~/Library/Spelling/`.
+
 ## Skills
 
 - `.agents/skills/doc-coauthoring/` — Structured workflow for co-authoring documentation (context gathering, refinement, reader testing)

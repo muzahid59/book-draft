@@ -1,0 +1,7 @@
+extends: existence
+message: "The book speaks to the reader as তুমি, not '%s'"
+level: warning
+nonword: true
+tokens:
+  - আপনি
+  - আপনার

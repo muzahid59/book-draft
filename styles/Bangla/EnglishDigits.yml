@@ -1,0 +1,8 @@
+extends: existence
+message: "Use Bengali numerals (০-৯): '%s'"
+level: warning
+nonword: true
+# Skips product names like "GPT-4-কে" and "Dota 2 খেলা".
+tokens:
+  - '[\x{0980}-\x{09FF}]\s[0-9]+'
+  - '(?<![A-Za-z0-9][\s-]?)(?<![0-9])[0-9]+[\s-]?[\x{0980}-\x{09FF}]'

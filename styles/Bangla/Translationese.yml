@@ -1,0 +1,10 @@
+extends: existence
+message: "Sounds translated/formal — rewrite with a plain verb: '%s'"
+level: warning
+nonword: true
+tokens:
+  - দ্বারা
+  - কর্তৃক
+  - উল্লেখ্য যে
+  - বলা বাহুল্য
+  - 'করা হ(?:\x{09DF}|\x{09AF}\x{09BC})ে থাকে'

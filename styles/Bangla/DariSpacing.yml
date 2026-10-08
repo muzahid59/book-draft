@@ -1,0 +1,6 @@
+extends: existence
+message: "Missing space after full stop: '%s'"
+level: error
+nonword: true
+tokens:
+  - '[।\.][\x{0980}-\x{09FF}]'

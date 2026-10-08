@@ -1,0 +1,6 @@
+extends: existence
+message: "Use দাঁড়ি (।) instead of '.' after Bengali text: '%s'"
+level: warning
+nonword: true
+tokens:
+  - '[\x{0980}-\x{09FF}]\.(?:\s|$)'

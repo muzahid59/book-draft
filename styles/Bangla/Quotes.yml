@@ -1,0 +1,6 @@
+extends: existence
+message: "Doubled quote mark: '%s'"
+level: error
+nonword: true
+tokens:
+  - "''"

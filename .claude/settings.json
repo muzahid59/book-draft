@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "f=$(python3 -c 'import json,sys;print(json.load(sys.stdin).get(\"tool_input\",{}).get(\"file_path\",\"\"))'); case \"$f\" in */chapters-md/*.md) \"$CLAUDE_PROJECT_DIR/tools/check.sh\" \"chapters-md/$(basename \"$f\")\" >&2 || exit 2;; esac"
+          }
+        ]
+      }
+    ]
+  }
+}
