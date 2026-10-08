@@ -2,6 +2,7 @@
 # Usage: tools/check.sh <chapter.md>...  — Vale style rules + Hunspell bn_BD spelling.
 # Run from the repo root. Spelling needs ~/Library/Spelling/bn_BD.{aff,dic} (see docs/style-guide.md).
 cd "$(dirname "$0")/.." || exit 1
+for f in "$@"; do [ -f "$f" ] || { echo "$f: not found"; exit 1; }; done
 status=0
 vale --no-exit --output=line "$@" | grep . && status=1
 dict="$HOME/Library/Spelling/bn_BD"

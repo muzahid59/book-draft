@@ -9,7 +9,7 @@
 | Chapter 3 — উদাহরণ দিয়ে যন্ত্র শেখানো | TODO |
 | Chapter 4 — কেউ না বলেও ধরন খোঁজা | TODO |
 | Chapter 5 — ভুল করে করে শেখা | TODO |
-| Chapter 6 — নিউরাল নেটওয়ার্ক | TODO |
+| Chapter 6 — নিউরাল নেটওয়ার্ক | DONE (~1,590 words; reviewed by beta-reader, line-editor, fact-checker) |
 | Chapter 7 — ছবি ও ভিডিও | TODO |
 | Chapter 8 — ভাষা কীভাবে বোঝে | TODO |
 | Chapter 9 — বাস্তব দুনিয়ায় এআই | TODO |
@@ -63,6 +63,8 @@ Created directly as markdown in `chapters-md/`. Converted to .docx in the final 
 
 ## Per-Chapter Content Specs
 
+Word targets are rough guides, not limits. Going over is fine when the extra words answer a confusion the beta reader actually reported.
+
 ### Chapter 2 — ডিসিশন বা সিদ্ধান্ত কি
 **Target:** ~888 → ~1,300 words | **w:id range:** 200-230
 
@@ -102,7 +104,8 @@ Created directly as markdown in `chapters-md/`. Converted to .docx in the final 
 5. **Neural network bridge** at end — preview Ch 6
 
 ### Chapter 6 — মস্তিষ্কের রূপকথা — নিউরাল নেটওয়ার্ক
-**Target:** ~751 → ~1,300 words | **w:id range:** 600-630
+**Target:** ~751 → ~1,300 words (actual: ~1,590) | **w:id range:** 600-630
+**Done differently:** kept the exam-paper analogy for backprop (reframed as a coaching teacher) instead of the cooking analogy — readers named it their favourite part. Running example: Nani picking mangoes at the bazaar (cold open → single-node worked example → backprop walkthrough → closing hook to vision chapter).
 
 1. **Diagram placeholder** after layers: `[Insert diagram: Neural network with three layers — input (রঙ, দৃঢ়তা, গন্ধ, আকার), hidden (6 nodes), output (পাকা, কাঁচা)]`
 2. **Mango-ripeness worked example** for weights/biases — color, firmness, smell as inputs, walk through intuitively
