@@ -4,7 +4,7 @@
 
 | Task | Status |
 |------|--------|
-| Chapter 1 — ভূমিকা | DONE (committed 9e3004e) |
+| Chapter 1 — ভূমিকা | DONE (committed 9e3004e in .docx; restored into .md — the .md conversion had missed it) |
 | Chapter 2 — ডিসিশন বা সিদ্ধান্ত কি | TODO |
 | Chapter 3 — উদাহরণ দিয়ে যন্ত্র শেখানো | TODO |
 | Chapter 4 — কেউ না বলেও ধরন খোঁজা | TODO |
@@ -49,6 +49,11 @@ Revise the Bengali AI book implementing 10 beta reader recommendations. All edit
 - `**একটু ভাবো**` + `*italic question*` = Interactive callout
 - `[Insert diagram: description]` = Diagram placeholder (English)
 - Body text = plain paragraphs
+- `অধ্যায় N` label sits on the first line of its own chapter file, Bengali numerals
+
+## Chapter Numbering
+
+"Chapter N" in this spec = **file number** (internal). Text the reader sees uses **book numbering = file number − 1** (ভূমিকা is unnumbered). E.g. file 04 (unsupervised) = অধ্যায় ৩, file 06 (neural networks) = অধ্যায় ৫, file 09 (real world) = অধ্যায় ৮. New chapters: file 12 = অধ্যায় ১১, file 13 (glossary) is unnumbered.
 
 ## New chapters (12, 13)
 
@@ -61,7 +66,7 @@ Created directly as markdown in `chapters-md/`. Converted to .docx in the final 
 ### Chapter 2 — ডিসিশন বা সিদ্ধান্ত কি
 **Target:** ~888 → ~1,300 words | **w:id range:** 200-230
 
-1. **Trim Spotify paragraph** in "নিয়ম বনাম শেখা" section — remove clustering explanation (covered in Ch 4), add forward reference: "Spotify কীভাবে এটা করে তা অধ্যায় ৪-এ বিস্তারিত দেখবে।"
+1. **Trim Spotify paragraph** in "নিয়ম বনাম শেখা" section — remove clustering explanation (covered in Ch 4), add forward reference: "Spotify কীভাবে এটা করে তা অধ্যায় ৩-এ বিস্তারিত দেখবে।"
 2. **Insert diagram placeholder** after data/pattern/prediction summary: `[Insert diagram: Data → Pattern → Prediction cycle — three interconnected circles with arrows, labeled ডেটা → ধরন → পূর্বাভাস]`
 3. **Insert bKash example** of data/pattern/prediction cycle (2 paras):
    - bKash transactions = ডেটা, spending patterns = ধরন, fraud alert = পূর্বাভাস
@@ -76,7 +81,7 @@ Created directly as markdown in `chapters-md/`. Converted to .docx in the final 
 2. **Agriculture example** — classifying Bangladesh's rice varieties or jute quality with labeled images
 3. **SSC/HSC exam analogy** for overfitting — memorizing old questions vs understanding concepts
 4. **"একটু ভাবো"**: "তুমি যদি একটা এআই তৈরি করতে কাঁঠাল, লিচু, আর আম চিনতে — কী কী তথ্য তুমি লেবেল হিসেবে ব্যবহার করতে?"
-5. **Neural network bridge** at end: "তুমি হয়তো ভাবছ — এআই আসলে কোন গাণিতিক কাঠামো ব্যবহার করে এই ধরনগুলো শেখে? উত্তরটা হলো নিউরাল নেটওয়ার্ক — অধ্যায় ৬-এ বিস্তারিত আসবে।"
+5. **Neural network bridge** at end: "তুমি হয়তো ভাবছ — এআই আসলে কোন গাণিতিক কাঠামো ব্যবহার করে এই ধরনগুলো শেখে? উত্তরটা হলো নিউরাল নেটওয়ার্ক — অধ্যায় ৫-এ বিস্তারিত আসবে।"
 
 ### Chapter 4 — কেউ না বলেও ধরন খোঁজা (Unsupervised Learning)
 **Target:** ~604 → ~1,200 words | **w:id range:** 400-430
