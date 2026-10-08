@@ -3,4 +3,5 @@ message: "Missing space after full stop: '%s'"
 level: error
 nonword: true
 tokens:
-  - '[।\.][\x{0980}-\x{09FF}]'
+  - '।[\x{0980}-\x{09FF}]'
+  - '(?<![০-৯])\.[\x{0980}-\x{09FF}]'
