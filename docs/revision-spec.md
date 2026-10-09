@@ -7,7 +7,7 @@
 | Chapter 1 — ভূমিকা | DONE (committed 9e3004e in .docx; restored into .md — the .md conversion had missed it) |
 | Chapter 2 — ডিসিশন বা সিদ্ধান্ত কি | TODO |
 | Chapter 3 — উদাহরণ দিয়ে যন্ত্র শেখানো | DONE (~1,570 words; reviewed by beta-reader, line-editor, fact-checker) |
-| Chapter 4 — কেউ না বলেও ধরন খোঁজা | TODO |
+| Chapter 4 — কেউ না বলেও ধরন খোঁজা | DONE (~1,600 words; reviewed by beta-reader, line-editor, fact-checker) |
 | Chapter 5 — ভুল করে করে শেখা | TODO |
 | Chapter 6 — নিউরাল নেটওয়ার্ক | DONE (~1,820 words; reviewed by beta-reader, line-editor, fact-checker) |
 | Chapter 7 — ছবি ও ভিডিও | TODO |
@@ -88,7 +88,8 @@ Word targets are rough guides, not limits. Going over is fine when the extra wor
 **Done differently:** Bengali-context mislabeling uses documented research instead of the hypothetical বিরিয়ানি→paella: Shankar et al. 2017 (Hyderabad groom → 'chain mail') and DeVries et al. 2019 (~10-point accuracy gap for low-income homes); food examples kept only as a labelled guess for the reader to test. Agriculture = Rahman et al. 2020 (BRRI rice disease/pest images). Running example: photos in your phone gallery throughout (search 'cat' cold open, labelled-photo table with T-shirt edge case, Google Photos face naming, sofa-cat overfitting, 1,000-photo split); mango kept for Ch 6 only. Bengali.AI and BRRI framed as photo labelling; TIME/Kenya kept with an explicit 'লেখার বেলাতেও' bridge. একটু ভাবো changed from fruits to rickshaw photos to match the thread.
 
 ### Chapter 4 — কেউ না বলেও ধরন খোঁজা (Unsupervised Learning)
-**Target:** ~604 → ~1,200 words | **w:id range:** 400-430
+**Target:** ~604 → ~1,200 words (actual: ~1,600) | **w:id range:** 400-430
+**Done differently:** running example is Facebook (People You May Know cold open → mutual-friends toy table → bought-likes clustering via SynchroTrap, Cao et al. CCS 2014, with a like-timing toy table → login-alert anomaly detection → cricket-win likes as the false-alarm case, tied to SynchroTrap's 'sustained synchrony' rule). Spotify and YouTube were considered; Facebook chosen for familiarity (60M+ BD users) and because SynchroTrap is a real, deployed unsupervised clustering system. SynchroTrap accounts described as malicious (fake or hacked), humans only sampled for accuracy. Amazon/bank examples dropped. bKash (Daily Star 2026) framed honestly: unsupervised baseline missed ~2/3; 97% only after adding label-trained models; a proposal. Garment QC via Mei et al. 2018. Ice cream/drowning replaced by the cricket example. Google eye-scan dropped (Poplin et al. 2018 was supervised — candidate for Chapter 9). Chapter 3's closing hook now asks who would label billions of friendships, likes and logins.
 
 1. **bKash fraud detection case study** after anomaly detection (3-4 paras) — mobile money, unsupervised anomaly detection, no pre-labeled fraud examples
 2. **Garment industry QC** — unsupervised learning for fabric defect detection
