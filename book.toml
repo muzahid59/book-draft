@@ -1,0 +1,19 @@
+[book]
+title = "এআই কীভাবে সিদ্ধান্ত নেয়"
+language = "bn"
+src = "chapters-md"
+
+[build]
+build-dir = "book"
+create-missing = false
+
+[output.html]
+default-theme = "light"
+no-section-label = true
+preferred-dark-theme = "navy"
+additional-css = ["site/book.css"]
+additional-js = ["site/book.js"]
+
+# mdBook search drops Bengali words when indexing, so it is off; Ctrl+F on print.html covers the whole book.
+[output.html.search]
+enable = false

@@ -43,6 +43,7 @@ pip install python-docx
 - Revision work happens in `chapters-md/` (see `docs/revision-spec.md`).
 - `tools/check.sh <file>` runs Vale (`styles/Bangla/`) + Hunspell bn_BD; a hook runs it after every edit to `chapters-md/`. Add accepted words to `tools/wordlist.txt`.
 - Editor agents in `.claude/agents/`: `beta-reader`, `line-editor`, `fact-checker` (all report-only).
+- Website: every push to `main` publishes `chapters-md/` to GitHub Pages via mdBook (`book.toml`, `chapters-md/SUMMARY.md`, `site/`, `.github/workflows/pages.yml`). When a chapter is revised, delete its `> **খসড়া:** …` note.
 - Setup on a new machine: `brew install vale hunspell`; put `bn_BD.aff`/`bn_BD.dic` (GPL-2, from the "bn-BD spellchecker" Firefox add-on by Bangla Type Foundry) in `~/Library/Spelling/`.
 
 ## Skills

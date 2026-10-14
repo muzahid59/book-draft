@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@400;700&display=swap");
+
+:root {
+  --content-max-width: 760px;
+}
+
+html, body, .sidebar, .menu-title {
+  font-family: "Noto Serif Bengali", serif;
+}
+
+.content main {
+  font-size: 1.15em;
+  line-height: 1.9;
+}
+
+/* "অধ্যায় ৩" line above each chapter title */
+.content main > p:first-child:has(+ h1) {
+  margin-bottom: 0;
+  color: var(--sidebar-active);
+  font-weight: 700;
+}
+
+.callout-think {
+  border-left: 4px solid var(--sidebar-active);
+  background: var(--quote-bg);
+  padding: 0.6em 1em;
+  margin: 1.5em 0;
+}
+.callout-think p { margin: 0.3em 0; }
+
+.diagram-placeholder {
+  border: 2px dashed var(--quote-border);
+  color: var(--fg);
+  opacity: 0.75;
+  padding: 0.8em 1em;
+  font-size: 0.9em;
+}
+
