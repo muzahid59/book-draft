@@ -15,9 +15,9 @@
 | Chapter 9 — বাস্তব দুনিয়ায় এআই | DONE (~1,520 words; reviewed by beta-reader, line-editor, fact-checker) |
 | Chapter 10 — পক্ষপাত, ন্যায্যতা | DONE (~1,790 words; reviewed by beta-reader, line-editor, fact-checker) |
 | Chapter 11 — ভবিষ্যৎ | DONE (~1,840 words; reviewed by beta-reader, line-editor, fact-checker) |
-| Chapter 12 — ডেটা গোপনীয়তা (NEW) | TODO |
-| Chapter 13 — শব্দকোষ / Glossary (NEW) | TODO |
-| Final pass — transitions, navigation, merge | TODO |
+| Chapter 12 — ডেটা গোপনীয়তা (NEW) | DONE (~1,690 words; reviewed by beta-reader, line-editor, fact-checker) |
+| Chapter 13 — শব্দকোষ / Glossary (NEW) | DONE (45 terms, each pointing to its chapter) |
+| Final pass — transitions, navigation, merge | PARTLY DONE (transitions and site navigation done; .docx merge pending) |
 
 ---
 
@@ -175,6 +175,7 @@ Word targets are rough guides, not limits. Going over is fine when the extra wor
 
 ### Chapter 12 — ডেটা গোপনীয়তা ও নজরদারি (NEW — Data Privacy)
 **Target:** ~1,200-1,500 words | **Created with python-docx**
+**Done differently:** written in Markdown (file 12, book অধ্যায় ১১). Running example: 'তোমার একদিনের ডেটার ছাপ' — one day from waking to sleeping (weather-app location sharing per NYT 2018, bKash/Nagad, YouTube/Facebook, a ChatGPT moment at night, targeted ads and data brokers per FTC 2014). Consent via the NameDrop study and McDonald & Cranor; COPPA, GDPR; Bangladesh's ব্যক্তিগত উপাত্ত সুরক্ষা আইন, ২০২৬ (from the Nov 2025 ordinance; under-18 = child) stated neutrally. The spec's state-surveillance section (China social credit, Dhaka CCTV, Digital Security Act) replaced by commercial tracking — no political content. Ends with concrete phone-settings steps and a pointer to the glossary.
 
 Heading1: "ডেটা গোপনীয়তা ও নজরদারি"
 
@@ -188,6 +189,7 @@ Plus "একটু ভাবো" prompt and navigation link to Ch 13.
 
 ### Chapter 13 — শব্দকোষ (NEW — Glossary)
 **Target:** ~35 terms | **Created with python-docx**
+**Done differently:** written in Markdown (file 13), 45 terms in Bengali alphabetical order, each with the English term and a chapter pointer; definitions reuse each chapter's running example. Collaborative filtering omitted (no longer used in the book); added ধরন, এজেন্ট, পুরস্কার, রিওয়ার্ড হ্যাকিং, টেস্ট সেট, কোল্ড স্টার্ট, পিক্সেল, ফিল্টার, ট্রান্সফর্মার, এবড়োখেবড়ো সীমানা, ডেটা ব্রোকার, etc.
 
 Heading1: "শব্দকোষ"
 
