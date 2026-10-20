@@ -10,7 +10,7 @@
 | Chapter 4 — কেউ না বলেও ধরন খোঁজা | DONE (~1,670 words; reviewed by beta-reader, line-editor, fact-checker) |
 | Chapter 5 — ভুল করে করে শেখা | DONE (~1,640 words; reviewed by beta-reader, line-editor, fact-checker) |
 | Chapter 6 — নিউরাল নেটওয়ার্ক | DONE (~1,820 words; reviewed by beta-reader, line-editor, fact-checker) |
-| Chapter 7 — ছবি ও ভিডিও | TODO |
+| Chapter 7 — ছবি ও ভিডিও | DONE (~1,740 words; reviewed by beta-reader, line-editor, fact-checker) |
 | Chapter 8 — ভাষা কীভাবে বোঝে | TODO |
 | Chapter 9 — বাস্তব দুনিয়ায় এআই | TODO |
 | Chapter 10 — পক্ষপাত, ন্যায্যতা | TODO |
@@ -119,7 +119,8 @@ Word targets are rough guides, not limits. Going over is fine when the extra wor
 5. **"একটু ভাবো"**: "তোমার নিজের শেখার প্রক্রিয়ার সাথে ব্যাকপ্রপাগেশনের মিল কোথায়?"
 
 ### Chapter 7 — এআই যেভাবে দেখে (Computer Vision)
-**Target:** ~729 → ~1,300 words | **w:id range:** 700-730
+**Target:** ~729 → ~1,300 words (actual: ~1,740) | **w:id range:** 700-730
+**Done differently:** running example is 'তোমার মুখ' — face unlock cold open → pixels → CNN filters tied to Dada's mango node → Zeiler & Fergus layer table → Face ID vs 2D face unlock (Which? 2026: 133/208 phones fooled by a printed photo) → deepfakes as the reverse (decoder + GAN explained via লুকোচুরি arms race), Arup and the Bangladesh Jan 2024 election cases (attributed to FT; no causal claim). AlexNet reduced to a pointer (already in অধ্যায় ৫). Hawk-Eye as the 'seeing without learning' contrast. Garments section not added (home is অধ্যায় ৩); medical scans reduced to a pointer to অধ্যায় ৮; face-recognition bias points to অধ্যায় ৯.
 
 1. **CONSOLIDATE medical AI** — shorten to 1-2 sentences + forward reference to Ch 9
 2. **CNN diagram placeholder**: `[Insert diagram: CNN filter progression — edges → shapes → faces]`
