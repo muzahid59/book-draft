@@ -13,7 +13,7 @@
 | Chapter 7 — ছবি ও ভিডিও | DONE (~1,740 words; reviewed by beta-reader, line-editor, fact-checker) |
 | Chapter 8 — ভাষা কীভাবে বোঝে | TODO |
 | Chapter 9 — বাস্তব দুনিয়ায় এআই | DONE (~1,520 words; reviewed by beta-reader, line-editor, fact-checker) |
-| Chapter 10 — পক্ষপাত, ন্যায্যতা | TODO |
+| Chapter 10 — পক্ষপাত, ন্যায্যতা | DONE (~1,790 words; reviewed by beta-reader, line-editor, fact-checker) |
 | Chapter 11 — ভবিষ্যৎ | TODO |
 | Chapter 12 — ডেটা গোপনীয়তা (NEW) | TODO |
 | Chapter 13 — শব্দকোষ / Glossary (NEW) | TODO |
@@ -151,6 +151,7 @@ Word targets are rough guides, not limits. Going over is fine when the extra wor
 
 ### Chapter 10 — পক্ষপাত, ন্যায্যতা (Bias & Fairness)
 **Target:** ~903 → ~1,500 words | **w:id range:** 1000-1040
+**Done differently:** running example is England's 2020 A-level grading algorithm (Ofqual), opened through Bangladesh's 2020 HSC 75/25 results (own past vs school's past). Invented student রিমা; three fairness definitions and the reversal numbers stand in for the impossibility result (Kleinberg et al. 2016, explained via the example). Gender Shades and GPT-4's Bengali MMLU gap cover the face and language promises. Dropped as political or off-thread: Aadhaar, caste, South Asian hiring subsection, soap dispenser (sensor, not AI). Amazon points back to অধ্যায় ৮.
 
 1. **Check Amazon hiring ref** — if retells full story, trim to single sentence pointing to Ch 9
 2. **NEW subsection "দক্ষিণ এশিয়ায় এআই পক্ষপাত"** (4-5 paras):
