@@ -3,5 +3,5 @@ message: "After first use, prefer the Bengali term (ধরন / পূর্ব�
 level: suggestion
 nonword: true
 tokens:
-  - প্যাটার্ন
-  - প্রেডিকশন
+  - '(?<!\()প্যাটার্ন'
+  - '(?<!\()প্রেডিকশন'

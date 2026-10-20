@@ -5,7 +5,7 @@
 | Task | Status |
 |------|--------|
 | Chapter 1 — ভূমিকা | DONE (committed 9e3004e in .docx; restored into .md — the .md conversion had missed it) |
-| Chapter 2 — ডিসিশন বা সিদ্ধান্ত কি | TODO |
+| Chapter 2 — ডিসিশন বা সিদ্ধান্ত কি | DONE (~1,490 words; reviewed by beta-reader, line-editor, fact-checker) |
 | Chapter 3 — উদাহরণ দিয়ে যন্ত্র শেখানো | DONE (~1,570 words; reviewed by beta-reader, line-editor, fact-checker) |
 | Chapter 4 — কেউ না বলেও ধরন খোঁজা | DONE (~1,670 words; reviewed by beta-reader, line-editor, fact-checker) |
 | Chapter 5 — ভুল করে করে শেখা | DONE (~1,640 words; reviewed by beta-reader, line-editor, fact-checker) |
@@ -66,7 +66,8 @@ Created directly as markdown in `chapters-md/`. Converted to .docx in the final 
 Word targets are rough guides, not limits. Going over is fine when the extra words answer a confusion the beta reader actually reported.
 
 ### Chapter 2 — ডিসিশন বা সিদ্ধান্ত কি
-**Target:** ~888 → ~1,300 words | **w:id range:** 200-230
+**Target:** ~888 → ~1,300 words (actual: ~1,490) | **w:id range:** 200-230
+**Done differently:** running example is a Thursday-evening Mirpur→Dhanmondi trip and Google Maps' '৫২ মিনিট' (Google 'Maps 101' blog, 2020). Rice cooker replaces the thermostat as the rule-based machine; a made-up travel-time table shows why 'distance ÷ speed' fails. Data/pattern/prediction all taught through traffic, plus the 2020 lockdown as patterns changing. Spotify removed. bKash example not added (its home is অধ্যায় ৩). ChatGPT record framed as an analyst estimate; Threads comparison dropped. Bangladesh paragraph points to Bengali.AI (অধ্যায় ২). Heading now 'কী' (file name unchanged).
 
 1. **Trim Spotify paragraph** in "নিয়ম বনাম শেখা" section — remove clustering explanation (covered in Ch 4), add forward reference: "Spotify কীভাবে এটা করে তা অধ্যায় ৩-এ বিস্তারিত দেখবে।"
 2. **Insert diagram placeholder** after data/pattern/prediction summary: `[Insert diagram: Data → Pattern → Prediction cycle — three interconnected circles with arrows, labeled ডেটা → ধরন → পূর্বাভাস]`
