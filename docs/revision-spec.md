@@ -12,7 +12,7 @@
 | Chapter 6 — নিউরাল নেটওয়ার্ক | DONE (~1,820 words; reviewed by beta-reader, line-editor, fact-checker) |
 | Chapter 7 — ছবি ও ভিডিও | DONE (~1,740 words; reviewed by beta-reader, line-editor, fact-checker) |
 | Chapter 8 — ভাষা কীভাবে বোঝে | TODO |
-| Chapter 9 — বাস্তব দুনিয়ায় এআই | TODO |
+| Chapter 9 — বাস্তব দুনিয়ায় এআই | DONE (~1,520 words; reviewed by beta-reader, line-editor, fact-checker) |
 | Chapter 10 — পক্ষপাত, ন্যায্যতা | TODO |
 | Chapter 11 — ভবিষ্যৎ | TODO |
 | Chapter 12 — ডেটা গোপনীয়তা (NEW) | TODO |
@@ -142,6 +142,7 @@ Word targets are rough guides, not limits. Going over is fine when the extra wor
 
 ### Chapter 9 — বাস্তব দুনিয়ায় এআই (AI in the Real World)
 **Target:** ~815 → ~1,300 words | **w:id range:** 900-930
+**Done differently:** running example is an invented relative, নাসরিন খালা, whose week passes through real systems: AI-read TB chest X-rays in Dhaka (Qin et al. 2021, icddr,b), the City Bank–bKash nano loan (automated limit; a smaller offer than asked, illustrative), Amazon's scrapped CV tool (this chapter is its home), Uber surge pricing (Pathao's method not public), and Facebook's reaction-emoji weighting. Dropped: predictive policing/COMPAS (political/justice), Google eye-photo study (cut for thread; supervised), telemedicine. Ends with a 'who decided / did she know?' table and a hook into bias.
 
 1. **NEW subsection "রাইড-হেইলিং: ঢাকার রাস্তায় এআই"** (3-4 paras) — Pathao/Uber surge pricing, route optimization, driver-rider matching in Dhaka traffic
 2. **Expand medical AI** (now primary location after Ch 7 consolidation) — TB detection in rural Bangladesh clinics, telemedicine
