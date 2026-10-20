@@ -14,7 +14,7 @@
 | Chapter 8 — ভাষা কীভাবে বোঝে | TODO |
 | Chapter 9 — বাস্তব দুনিয়ায় এআই | DONE (~1,520 words; reviewed by beta-reader, line-editor, fact-checker) |
 | Chapter 10 — পক্ষপাত, ন্যায্যতা | DONE (~1,790 words; reviewed by beta-reader, line-editor, fact-checker) |
-| Chapter 11 — ভবিষ্যৎ | TODO |
+| Chapter 11 — ভবিষ্যৎ | DONE (~1,840 words; reviewed by beta-reader, line-editor, fact-checker) |
 | Chapter 12 — ডেটা গোপনীয়তা (NEW) | TODO |
 | Chapter 13 — শব্দকোষ / Glossary (NEW) | TODO |
 | Final pass — transitions, navigation, merge | TODO |
@@ -164,6 +164,7 @@ Word targets are rough guides, not limits. Going over is fine when the extra wor
 
 ### Chapter 11 — ভবিষ্যৎ (Future and You)
 **Target:** ~1,165 → ~1,500 words | **w:id range:** 1100-1130
+**Done differently:** running example is 'দশ বছর পরের তুমি' — after SSC results, the reader tests an uncle's claim that AI will take every job in three steps. Grounded in real studies: Grace et al. 2023 survey (different respondent groups, ~70-year gap), Hinton vs LeCun, ILO 2023 (two lines), the customer-support study (Brynjolfsson et al., 2023 figures), BCG 'jagged frontier', OpenAI's withdrawn detector, detectors flagging non-native writers (Liang et al.), OII freelancing share. Critical-thinking guide cut from ten to seven bold numbered questions, each tied to a familiar app. Closes by answering the family's 'what should you study?' and hooks into অধ্যায় ১১ (data privacy). No politics.
 
 1. **Format 10 critical questions as numbered list** — add Bengali numerals (১., ২., ... ১০.), make question text bold
 2. **AGI grounding** — Bangladesh-specific: "বাংলাদেশের মতো দেশে AGI-র প্রভাব ভিন্ন হবে — কারণ এখানে অনেক মানুষের কাজ ইতিমধ্যে শ্রম-নিবিড়..."
