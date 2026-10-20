@@ -8,7 +8,7 @@
 | Chapter 2 — ডিসিশন বা সিদ্ধান্ত কি | TODO |
 | Chapter 3 — উদাহরণ দিয়ে যন্ত্র শেখানো | DONE (~1,570 words; reviewed by beta-reader, line-editor, fact-checker) |
 | Chapter 4 — কেউ না বলেও ধরন খোঁজা | DONE (~1,670 words; reviewed by beta-reader, line-editor, fact-checker) |
-| Chapter 5 — ভুল করে করে শেখা | TODO |
+| Chapter 5 — ভুল করে করে শেখা | DONE (~1,640 words; reviewed by beta-reader, line-editor, fact-checker) |
 | Chapter 6 — নিউরাল নেটওয়ার্ক | DONE (~1,820 words; reviewed by beta-reader, line-editor, fact-checker) |
 | Chapter 7 — ছবি ও ভিডিও | TODO |
 | Chapter 8 — ভাষা কীভাবে বোঝে | TODO |
@@ -98,7 +98,8 @@ Word targets are rough guides, not limits. Going over is fine when the extra wor
 5. Ch 4 already has "একটু ভাবো" — do NOT add another
 
 ### Chapter 5 — ভুল করে করে শেখা (Reinforcement Learning)
-**Target:** ~822 → ~1,250 words | **w:id range:** 500-530
+**Target:** ~822 → ~1,250 words (actual: ~1,640) | **w:id range:** 500-530
+**Done differently:** running example is লুকোচুরি — OpenAI's hide-and-seek experiment (Baker et al., ICLR 2020): RL vocabulary table, six-round arms race, box surfing and running off the map as reward hacking. Side cases: YouTube's 2012 switch from clicks to watch time, AlphaGo Move 37 (noting it first learned from human games), YouTube's 2019 REINFORCE recommender (Chen et al., WSDM 2019), one line on ChatGPT's RLHF. Dropped: carrom/ludo (thin research), Dhaka traffic (no real study found), Google cooling (2016 system was not RL), Dota/Atari/boat race/robots/self-driving.
 
 1. **Carrom/ludo example** after AlphaGo — RL with familiar Bangladeshi games
 2. **Dhaka traffic optimization** — RL for signal timing in world's most congested city, parallel to DeepMind data center cooling
