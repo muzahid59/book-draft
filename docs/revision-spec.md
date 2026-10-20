@@ -11,7 +11,7 @@
 | Chapter 5 — ভুল করে করে শেখা | DONE (~1,640 words; reviewed by beta-reader, line-editor, fact-checker) |
 | Chapter 6 — নিউরাল নেটওয়ার্ক | DONE (~1,820 words; reviewed by beta-reader, line-editor, fact-checker) |
 | Chapter 7 — ছবি ও ভিডিও | DONE (~1,740 words; reviewed by beta-reader, line-editor, fact-checker) |
-| Chapter 8 — ভাষা কীভাবে বোঝে | TODO |
+| Chapter 8 — ভাষা কীভাবে বোঝে | DONE (~1,920 words; reviewed by beta-reader, line-editor, fact-checker) |
 | Chapter 9 — বাস্তব দুনিয়ায় এআই | DONE (~1,520 words; reviewed by beta-reader, line-editor, fact-checker) |
 | Chapter 10 — পক্ষপাত, ন্যায্যতা | DONE (~1,790 words; reviewed by beta-reader, line-editor, fact-checker) |
 | Chapter 11 — ভবিষ্যৎ | DONE (~1,840 words; reviewed by beta-reader, line-editor, fact-checker) |
@@ -130,6 +130,7 @@ Word targets are rough guides, not limits. Going over is fine when the extra wor
 
 ### Chapter 8 — এআই ভাষা কীভাবে বোঝে (Language AI)
 **Target:** ~816 → ~1,350 words | **w:id range:** 800-830
+**Done differently:** running example is the phone keyboard's next-word guess growing into ChatGPT writing token by token. Tokens taught with a verified tiktoken table (Bangla sentence 49→16 tokens, English 9; 'মা' 3→2), Petrov et al. 2023, Common Crawl's Bengali share (~0.11%), Bangla as 7th by speakers (27 crore+). Attention as a fill-in-the-blank. Three training stages mapped onto অধ্যায় ১/২/৪, with RLHF delivering অধ্যায় ৪'s 'বিচারক' promise; InstructGPT 1.3B vs 175B. Hallucination via Mata v. Avianca plus a try-it-yourself poem check. Spec's মুক্তিযুদ্ধ hallucination item dropped (no-politics rule). Uses 'প্যারামিটার' for model sizes.
 
 1. **NEW subsection "বাংলা ভাষা আর এআই: অনন্য চ্যালেঞ্জ"** (4 paras):
    - Bengali = 7th most spoken but "low-resource" for AI
