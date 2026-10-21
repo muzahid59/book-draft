@@ -1,6 +1,6 @@
 # স্টাইল গাইড — এআই কীভাবে সিদ্ধান্ত নেয়
 
-Read this before writing or editing any chapter. Tuning fork for the voice: the opening of `chapters-md/01_ভূমিকা.md` ("আজ সকালে, বিছানা থেকে ওঠার আগেই...").
+Read this before writing or editing any chapter. Tuning fork for the voice: the opening of `chapters-md/00_ভূমিকা.md` ("টং দোকানের বেঞ্চে তুমি বসার আগেই...") for rhythm and তুমি; "এমন যন্ত্র-মামা তোমার পকেটেই আছে" for the cousin's playful register.
 
 ## Voice
 
@@ -39,9 +39,15 @@ Technical names with no good Bengali (নিউরাল নেটওয়া�
 ## Numbers and punctuation
 
 - Bengali numerals everywhere: অধ্যায় ৩, ২০২২ সাল, ৮৬ বিলিয়ন.
-- Chapter references use the **book's** numbering (ডিসিশন chapter = অধ্যায় ১), not file numbers.
+- Chapter references use the **book's** numbering (ডিসিশন chapter = অধ্যায় ১). File numbers match: `00_ভূমিকা.md`, `01_*.md` … `11_*.md`, `12_শব্দকোষ.md`.
+- Percent is written 'ভাগ' ('৩৯ ভাগ'), not '%'. 'শতাংশ পয়েন্ট' for point differences. 'প্রতি ১০০-তে ৬৪' for 'out of 100'. Multiples are spaced: 'পাঁচ গুণ'.
+- Money and counts in digits with the unit word: '৮ হাজার টাকা', '৯টা ওয়েট'. Digits-in-words ('সাতটা প্রশ্ন') only in running speech that isn't a measurement.
 - Em dash with spaces: "কথা — এবং". Single quotes for terms: 'ডিপ'. No doubled quotes ('').
 - Full stop is দাঁড়ি (।), with a space after it.
+
+## Settled spellings
+
+Pick one and keep it: লাখ (not লক্ষ), সাথে (not সঙ্গে), আরো, ভালো, সুপারিশ (not সাজেস্ট), ইঞ্জিনিয়ার (not প্রকৌশলী), 'শেখানো নেটওয়ার্ক' (not প্রশিক্ষিত), কীভাবে (not কেমনে), করো/মনে করো/হচ্ছো, দুবার (no apostrophe), ChatGPT-এর. Brand names stay Latin with a Bengali suffix: bKash-এর, Nagad-এ.
 
 ## Examples
 

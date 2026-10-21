@@ -173,11 +173,11 @@ Word targets are rough guides, not limits. Going over is fine when the extra wor
 4. **Navigation link** to new Ch 12
 5. **"একটু ভাবো"**: "এই বইয়ের কোনো অংশ কি এআই দিয়ে লেখা হতে পারে? তুমি কীভাবে বুঝবে?"
 
-### Chapter 12 — ডেটা গোপনীয়তা ও নজরদারি (NEW — Data Privacy)
+### Chapter 12 — ডেটা গোপনীয়তা (NEW — Data Privacy)
 **Target:** ~1,200-1,500 words | **Created with python-docx**
 **Done differently:** written in Markdown (file 12, book অধ্যায় ১১). Running example: 'তোমার একদিনের ডেটার ছাপ' — one day from waking to sleeping (weather-app location sharing per NYT 2018, bKash/Nagad, YouTube/Facebook, a ChatGPT moment at night, targeted ads and data brokers per FTC 2014). Consent via the NameDrop study and McDonald & Cranor; COPPA, GDPR; Bangladesh's ব্যক্তিগত উপাত্ত সুরক্ষা আইন, ২০২৬ (from the Nov 2025 ordinance; under-18 = child) stated neutrally. The spec's state-surveillance section (China social credit, Dhaka CCTV, Digital Security Act) replaced by commercial tracking — no political content. Ends with concrete phone-settings steps and a pointer to the glossary.
 
-Heading1: "ডেটা গোপনীয়তা ও নজরদারি"
+Heading1: "ডেটা গোপনীয়তা"
 
 Sections (Heading2):
 1. "তোমার ডেটা কোথা থেকে আসে?" — bKash transactions, Grameenphone metadata, Facebook usage
